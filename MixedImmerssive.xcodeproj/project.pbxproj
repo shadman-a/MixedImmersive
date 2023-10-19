@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0D134BB2AE1E74B00CB31D4 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F0D134BA2AE1E74B00CB31D4 /* RealityKitContent */; };
+		F0D134BD2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D134BC2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift */; };
+		F0D134BF2AE1E74B00CB31D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D134BE2AE1E74B00CB31D4 /* ContentView.swift */; };
+		F0D134C12AE1E74B00CB31D4 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D134C02AE1E74B00CB31D4 /* ImmersiveView.swift */; };
+		F0D134C32AE1E74D00CB31D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D134C22AE1E74D00CB31D4 /* Assets.xcassets */; };
+		F0D134C62AE1E74D00CB31D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D134C52AE1E74D00CB31D4 /* Preview Assets.xcassets */; };
+		F0D134D12AE1E74D00CB31D4 /* MixedImmerssiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D134D02AE1E74D00CB31D4 /* MixedImmerssiveTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0D134CD2AE1E74D00CB31D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0D134AD2AE1E74B00CB31D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D134B42AE1E74B00CB31D4;
+			remoteInfo = MixedImmerssive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0D134B52AE1E74B00CB31D4 /* MixedImmerssive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedImmerssive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D134B92AE1E74B00CB31D4 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		F0D134BC2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedImmerssiveApp.swift; sourceTree = "<group>"; };
+		F0D134BE2AE1E74B00CB31D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0D134C02AE1E74B00CB31D4 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		F0D134C22AE1E74D00CB31D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0D134C52AE1E74D00CB31D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0D134C72AE1E74D00CB31D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D134CC2AE1E74D00CB31D4 /* MixedImmerssiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixedImmerssiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D134D02AE1E74D00CB31D4 /* MixedImmerssiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedImmerssiveTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0D134B22AE1E74B00CB31D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D134BB2AE1E74B00CB31D4 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D134C92AE1E74D00CB31D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0D134AC2AE1E74B00CB31D4 = {
+			isa = PBXGroup;
+			children = (
+				F0D134B72AE1E74B00CB31D4 /* MixedImmerssive */,
+				F0D134B82AE1E74B00CB31D4 /* Packages */,
+				F0D134CF2AE1E74D00CB31D4 /* MixedImmerssiveTests */,
+				F0D134B62AE1E74B00CB31D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0D134B62AE1E74B00CB31D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0D134B52AE1E74B00CB31D4 /* MixedImmerssive.app */,
+				F0D134CC2AE1E74D00CB31D4 /* MixedImmerssiveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0D134B72AE1E74B00CB31D4 /* MixedImmerssive */ = {
+			isa = PBXGroup;
+			children = (
+				F0D134BC2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift */,
+				F0D134BE2AE1E74B00CB31D4 /* ContentView.swift */,
+				F0D134C02AE1E74B00CB31D4 /* ImmersiveView.swift */,
+				F0D134C22AE1E74D00CB31D4 /* Assets.xcassets */,
+				F0D134C72AE1E74D00CB31D4 /* Info.plist */,
+				F0D134C42AE1E74D00CB31D4 /* Preview Content */,
+			);
+			path = MixedImmerssive;
+			sourceTree = "<group>";
+		};
+		F0D134B82AE1E74B00CB31D4 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F0D134B92AE1E74B00CB31D4 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		F0D134C42AE1E74D00CB31D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F0D134C52AE1E74D00CB31D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0D134CF2AE1E74D00CB31D4 /* MixedImmerssiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0D134D02AE1E74D00CB31D4 /* MixedImmerssiveTests.swift */,
+			);
+			path = MixedImmerssiveTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0D134B42AE1E74B00CB31D4 /* MixedImmerssive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D134D42AE1E74D00CB31D4 /* Build configuration list for PBXNativeTarget "MixedImmerssive" */;
+			buildPhases = (
+				F0D134B12AE1E74B00CB31D4 /* Sources */,
+				F0D134B22AE1E74B00CB31D4 /* Frameworks */,
+				F0D134B32AE1E74B00CB31D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixedImmerssive;
+			packageProductDependencies = (
+				F0D134BA2AE1E74B00CB31D4 /* RealityKitContent */,
+			);
+			productName = MixedImmerssive;
+			productReference = F0D134B52AE1E74B00CB31D4 /* MixedImmerssive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0D134CB2AE1E74D00CB31D4 /* MixedImmerssiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D134D72AE1E74D00CB31D4 /* Build configuration list for PBXNativeTarget "MixedImmerssiveTests" */;
+			buildPhases = (
+				F0D134C82AE1E74D00CB31D4 /* Sources */,
+				F0D134C92AE1E74D00CB31D4 /* Frameworks */,
+				F0D134CA2AE1E74D00CB31D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0D134CE2AE1E74D00CB31D4 /* PBXTargetDependency */,
+			);
+			name = MixedImmerssiveTests;
+			productName = MixedImmerssiveTests;
+			productReference = F0D134CC2AE1E74D00CB31D4 /* MixedImmerssiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0D134AD2AE1E74B00CB31D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					F0D134B42AE1E74B00CB31D4 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					F0D134CB2AE1E74D00CB31D4 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = F0D134B42AE1E74B00CB31D4;
+					};
+				};
+			};
+			buildConfigurationList = F0D134B02AE1E74B00CB31D4 /* Build configuration list for PBXProject "MixedImmerssive" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0D134AC2AE1E74B00CB31D4;
+			productRefGroup = F0D134B62AE1E74B00CB31D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0D134B42AE1E74B00CB31D4 /* MixedImmerssive */,
+				F0D134CB2AE1E74D00CB31D4 /* MixedImmerssiveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0D134B32AE1E74B00CB31D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D134C62AE1E74D00CB31D4 /* Preview Assets.xcassets in Resources */,
+				F0D134C32AE1E74D00CB31D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D134CA2AE1E74D00CB31D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0D134B12AE1E74B00CB31D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D134BF2AE1E74B00CB31D4 /* ContentView.swift in Sources */,
+				F0D134BD2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift in Sources */,
+				F0D134C12AE1E74B00CB31D4 /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D134C82AE1E74D00CB31D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D134D12AE1E74D00CB31D4 /* MixedImmerssiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0D134CE2AE1E74D00CB31D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D134B42AE1E74B00CB31D4 /* MixedImmerssive */;
+			targetProxy = F0D134CD2AE1E74D00CB31D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F0D134D22AE1E74D00CB31D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		F0D134D32AE1E74D00CB31D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		F0D134D52AE1E74D00CB31D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MixedImmerssive/Preview Content\"";
+				DEVELOPMENT_TEAM = U2W5XN7UV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shadmanahmed.MixedImmerssive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		F0D134D62AE1E74D00CB31D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MixedImmerssive/Preview Content\"";
+				DEVELOPMENT_TEAM = U2W5XN7UV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shadmanahmed.MixedImmerssive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		F0D134D82AE1E74D00CB31D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2W5XN7UV6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shadmanahmed.MixedImmerssiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedImmerssive.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MixedImmerssive";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		F0D134D92AE1E74D00CB31D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2W5XN7UV6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shadmanahmed.MixedImmerssiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedImmerssive.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MixedImmerssive";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0D134B02AE1E74B00CB31D4 /* Build configuration list for PBXProject "MixedImmerssive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D134D22AE1E74D00CB31D4 /* Debug */,
+				F0D134D32AE1E74D00CB31D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D134D42AE1E74D00CB31D4 /* Build configuration list for PBXNativeTarget "MixedImmerssive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D134D52AE1E74D00CB31D4 /* Debug */,
+				F0D134D62AE1E74D00CB31D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D134D72AE1E74D00CB31D4 /* Build configuration list for PBXNativeTarget "MixedImmerssiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D134D82AE1E74D00CB31D4 /* Debug */,
+				F0D134D92AE1E74D00CB31D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0D134BA2AE1E74B00CB31D4 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F0D134AD2AE1E74B00CB31D4 /* Project object */;
+}
