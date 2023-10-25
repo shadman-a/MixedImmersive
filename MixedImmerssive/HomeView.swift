@@ -6,13 +6,63 @@
 //
 
 import SwiftUI
+import RealityKit
+import RealityKitContent
+
+
+
+
 
 struct HomeView: View {
+    
+    let repeatCount = 10
+    
+    @State private var showImmersiveSpace = false
+    @State private var immersiveSpaceIsShown = false
+    
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    
+    private var gridItemLayout = [GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0)]
+    
+    @State private var isEditing = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            SidebarView()
+            
+            ToolbarView(isEditing: $isEditing)
+            
+            //        VStack {
+            //
+            //            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
+            //                .toggleStyle(.button)
+            //                .padding(.top, 50)
+            //        }
+            //        .padding()
+            //        .onChange(of: showImmersiveSpace) { _, newValue in
+            //            Task {
+            //                if newValue {
+            //                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
+            //                    case .opened:
+            //                        immersiveSpaceIsShown = true
+            //                    case .error, .userCancelled:
+            //                        fallthrough
+            //                    @unknown default:
+            //                        immersiveSpaceIsShown = false
+            //                        showImmersiveSpace = false
+            //                    }
+            //                } else if immersiveSpaceIsShown {
+            //                    await dismissImmersiveSpace()
+            //                    immersiveSpaceIsShown = false
+            //                }
+            //            }
+            //        }
+            
+        }
+        
+        
     }
-}
-
-#Preview {
-    HomeView()
 }
