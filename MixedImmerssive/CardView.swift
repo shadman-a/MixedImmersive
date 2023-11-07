@@ -9,12 +9,12 @@ import SwiftUI
 
 struct CardView: View {
     
-    @State private var animate = false
+    let property: RentalProperty
     
     var body: some View {
         
         VStack(alignment: .leading, spacing: 10) {
-            AsyncImage(url: URL(string: "https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg")){ phase in
+            AsyncImage(url: URL(string: property.imageUrl)){ phase in
                 switch phase {
                 case .empty:
                     // Placeholder view or loading indicator
@@ -24,6 +24,8 @@ struct CardView: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+//                        .scaledToFill()
+                        .clipped()
                         .frame(height: 200)
                         .cornerRadius(10)
                 case .failure:
@@ -35,22 +37,22 @@ struct CardView: View {
                 }
             }
             
-            Text("Open: Sun. 12-1:30pm")
+            Text(property.openHours ?? "")
                 .font(.subheadline)
 //                .foregroundColor(.gray)
             
-            Text("$1,495,000")
+            Text(property.price)
                 .font(.title)
                 .fontWeight(.bold)
             
-            Text("2 bds | 1 ba | 1,704 sqft - Condo for sale")
+            Text("\(property.bedrooms) beds | \(property.bathrooms) baths | \(property.space)")
                 .font(.subheadline)
 //                .foregroundColor(.gray)
             
-            Text("98 Havemeyer St, Brooklyn, NY 11211")
+            Text(property.address)
                 .font(.subheadline)
             
-            Text("LISTING BY: NEST SEEKERS INTERNATIONAL")
+            Text(property.listingBy)
                 .font(.footnote)
 //                .foregroundColor(.gray)
                 .padding(.top, 5)
@@ -65,6 +67,17 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(property: RentalProperty(
+                    openHours: "Open: Sun. 12-1:30pm",
+                    price: "$4,500/mo",
+                    bedrooms: "2",
+                    bathrooms: "1",
+                    space: "1,704 sqft",
+                    address: "98 Havemeyer St, Brooklyn, NY 11211",
+                    moveInDate: "2023-12-01",
+                    description: "Spacious condo in a prime location, close to public transportation and amenities.",
+                    listingBy: "LISTING BY: NEST SEEKERS INTERNATIONAL",
+                    imageUrl: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+                ))
     }
 }

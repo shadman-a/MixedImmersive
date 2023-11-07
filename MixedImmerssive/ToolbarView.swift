@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ToolbarView: View {
     @Binding var isEditing: Bool
+    
+    @State private var searchText = ""
+
 
     var body: some View {
         HStack {
@@ -20,7 +23,7 @@ struct ToolbarView: View {
             }
             
             Spacer() // creates space between items
-
+            SearchBarView(text: $searchText, placeholder: "Search")
             Button(action: {
                 print("Save tapped")
             }) {

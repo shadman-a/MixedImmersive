@@ -14,9 +14,7 @@ import RealityKitContent
 
 
 struct HomeView: View {
-    
-    let repeatCount = 10
-    
+        
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
     
