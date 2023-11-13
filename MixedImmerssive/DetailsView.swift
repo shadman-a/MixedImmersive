@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import RealityKit
+import RealityKitContent
 
 struct DetailsView: View {
+    
+    @State private var showImmersiveSpace = false
+    @State private var immersiveSpaceIsShown = false
+    
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     
     var rentalProperty: RentalProperty
     
@@ -74,15 +82,33 @@ struct DetailsView: View {
                 .padding(.horizontal)
                 .padding(.top, 20)
                 
-//                ARViewContainer()
-//                                    .edgesIgnoringSafeArea(.all)
-//                NavigationLink("Open AR Experience", destination: ARViewContainer())
-//                }
-//                .padding(.horizontal)
-//                .padding(.top, 20)
+                
+                
+                Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
+                    .toggleStyle(.button)
             }
+            .padding()
+            .onChange(of: showImmersiveSpace) { _, newValue in
+                Task {
+                    if newValue {
+                        switch await openImmersiveSpace(id: "ImmersiveSpace") {
+                        case .opened:
+                            immersiveSpaceIsShown = true
+                        case .error, .userCancelled:
+                            fallthrough
+                        @unknown default:
+                            immersiveSpaceIsShown = false
+                            showImmersiveSpace = false
+                        }
+                    } else if immersiveSpaceIsShown {
+                        await dismissImmersiveSpace()
+                        immersiveSpaceIsShown = false
+                    }
+                }
+            }
+            
         }
-//        .navigationBarTitle("Details", displayMode: .inline)
+        .navigationBarTitle("Details", displayMode: .inline)
     }
 }
 

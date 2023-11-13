@@ -11,8 +11,6 @@
 		F0B9E3912AEB07B400F062B0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3902AEB07B400F062B0 /* DataService.swift */; };
 		F0B9E3932AEB140B00F062B0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */; };
 		F0B9E3952AEB318700F062B0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3942AEB318700F062B0 /* DetailsView.swift */; };
-		F0B9E3972AEC0A1A00F062B0 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3962AEC0A1A00F062B0 /* ARView.swift */; };
-		F0B9E39B2AEF228F00F062B0 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E39A2AEF228F00F062B0 /* ARViewContainer.swift */; };
 		F0D134BB2AE1E74B00CB31D4 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F0D134BA2AE1E74B00CB31D4 /* RealityKitContent */; };
 		F0D134BD2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D134BC2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift */; };
 		F0D134BF2AE1E74B00CB31D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D134BE2AE1E74B00CB31D4 /* ContentView.swift */; };
@@ -42,8 +40,6 @@
 		F0B9E3902AEB07B400F062B0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F0B9E3942AEB318700F062B0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		F0B9E3962AEC0A1A00F062B0 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
-		F0B9E39A2AEF228F00F062B0 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		F0D134B52AE1E74B00CB31D4 /* MixedImmerssive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedImmerssive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D134B92AE1E74B00CB31D4 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F0D134BC2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedImmerssiveApp.swift; sourceTree = "<group>"; };
@@ -117,8 +113,6 @@
 				F0B9E3902AEB07B400F062B0 /* DataService.swift */,
 				F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */,
 				F0B9E3942AEB318700F062B0 /* DetailsView.swift */,
-				F0B9E3962AEC0A1A00F062B0 /* ARView.swift */,
-				F0B9E39A2AEF228F00F062B0 /* ARViewContainer.swift */,
 			);
 			path = MixedImmerssive;
 			sourceTree = "<group>";
@@ -251,9 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D134BF2AE1E74B00CB31D4 /* ContentView.swift in Sources */,
-				F0B9E3972AEC0A1A00F062B0 /* ARView.swift in Sources */,
 				F0B9E38F2AEB078400F062B0 /* RentalProperty.swift in Sources */,
-				F0B9E39B2AEF228F00F062B0 /* ARViewContainer.swift in Sources */,
 				F0D134E52AE810B500CB31D4 /* MapView.swift in Sources */,
 				F0D134E92AE87D5700CB31D4 /* ToolbarView.swift in Sources */,
 				F0D134E72AE865B300CB31D4 /* SidebarView.swift in Sources */,
