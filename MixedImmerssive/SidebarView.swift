@@ -9,16 +9,12 @@ import SwiftUI
 
 struct SidebarView: View {
     
-    let repeatCount = 10
-    
     @State private var rentalProperties: [RentalProperty] = []
     
     
     private var gridItemLayout = [GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0)]
     
-    
-    
-    
+
     var body: some View {
         NavigationView {
             List {

@@ -28,10 +28,10 @@ struct ContentView: View {
                 }
             
             // Tab 2
-            MapView()
+            AccountView()
                 .tabItem {
-                    Image(systemName: "map")
-                    Text("Map")
+                    Image(systemName: "person.crop.circle")
+                    Text("Account")
                 }
             
             
