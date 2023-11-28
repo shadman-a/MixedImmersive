@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02EBC8E2B142D60004F99F5 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02EBC8D2B142D60004F99F5 /* CloudKitManager.swift */; };
+		F02EBC932B15874B004F99F5 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02EBC922B15874B004F99F5 /* Listing.swift */; };
+		F088C5562B0DBC38004A62F3 /* FloorPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C5552B0DBC38004A62F3 /* FloorPlan.swift */; };
+		F08DF45E2B0FD33200A8220F /* FloorPlanControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08DF45D2B0FD33200A8220F /* FloorPlanControls.swift */; };
 		F0A664EB2B0300F500BF5ACE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A664EA2B0300F400BF5ACE /* AccountView.swift */; };
-		F0A665052B0455FF00BF5ACE /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A665042B0455FF00BF5ACE /* ARView.swift */; };
-		F0B9E38F2AEB078400F062B0 /* RentalProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E38E2AEB078400F062B0 /* RentalProperty.swift */; };
 		F0B9E3912AEB07B400F062B0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3902AEB07B400F062B0 /* DataService.swift */; };
 		F0B9E3932AEB140B00F062B0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */; };
 		F0B9E3952AEB318700F062B0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3942AEB318700F062B0 /* DetailsView.swift */; };
@@ -38,9 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F02EBC8D2B142D60004F99F5 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		F02EBC912B14434D004F99F5 /* MixedImmerssive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MixedImmerssive.entitlements; sourceTree = "<group>"; };
+		F02EBC922B15874B004F99F5 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		F088C5552B0DBC38004A62F3 /* FloorPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlan.swift; sourceTree = "<group>"; };
+		F08DF45D2B0FD33200A8220F /* FloorPlanControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanControls.swift; sourceTree = "<group>"; };
 		F0A664EA2B0300F400BF5ACE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		F0A665042B0455FF00BF5ACE /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
-		F0B9E38E2AEB078400F062B0 /* RentalProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalProperty.swift; sourceTree = "<group>"; };
 		F0B9E3902AEB07B400F062B0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F0B9E3942AEB318700F062B0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
@@ -80,10 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F088C5532B0DBB67004A62F3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F088C5542B0DBBFC004A62F3 /* RealityView */ = {
+			isa = PBXGroup;
+			children = (
+				F088C5552B0DBC38004A62F3 /* FloorPlan.swift */,
+				F08DF45D2B0FD33200A8220F /* FloorPlanControls.swift */,
+			);
+			path = RealityView;
+			sourceTree = "<group>";
+		};
 		F0A664EC2B03177300BF5ACE /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				F0B9E3902AEB07B400F062B0 /* DataService.swift */,
+				F02EBC8D2B142D60004F99F5 /* CloudKitManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -91,7 +113,7 @@
 		F0A664ED2B03178C00BF5ACE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F0B9E38E2AEB078400F062B0 /* RentalProperty.swift */,
+				F02EBC922B15874B004F99F5 /* Listing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,10 +140,13 @@
 		F0D134B72AE1E74B00CB31D4 /* MixedImmerssive */ = {
 			isa = PBXGroup;
 			children = (
+				F02EBC912B14434D004F99F5 /* MixedImmerssive.entitlements */,
 				F0D134BC2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift */,
 				F0D134BE2AE1E74B00CB31D4 /* ContentView.swift */,
 				F0D134C02AE1E74B00CB31D4 /* ImmersiveView.swift */,
+				F088C5542B0DBBFC004A62F3 /* RealityView */,
 				F0D134C22AE1E74D00CB31D4 /* Assets.xcassets */,
+				F088C5532B0DBB67004A62F3 /* Entities */,
 				F0D134C72AE1E74D00CB31D4 /* Info.plist */,
 				F0A664ED2B03178C00BF5ACE /* Models */,
 				F0A664EC2B03177300BF5ACE /* Services */,
@@ -133,7 +158,6 @@
 				F0D134E82AE87D5700CB31D4 /* ToolbarView.swift */,
 				F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */,
 				F0B9E3942AEB318700F062B0 /* DetailsView.swift */,
-				F0A665042B0455FF00BF5ACE /* ARView.swift */,
 				F0A664EA2B0300F400BF5ACE /* AccountView.swift */,
 			);
 			path = MixedImmerssive;
@@ -267,18 +291,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D134BF2AE1E74B00CB31D4 /* ContentView.swift in Sources */,
-				F0B9E38F2AEB078400F062B0 /* RentalProperty.swift in Sources */,
 				F0D134E52AE810B500CB31D4 /* MapView.swift in Sources */,
 				F0D134E92AE87D5700CB31D4 /* ToolbarView.swift in Sources */,
 				F0D134E72AE865B300CB31D4 /* SidebarView.swift in Sources */,
+				F088C5562B0DBC38004A62F3 /* FloorPlan.swift in Sources */,
 				F0B9E3952AEB318700F062B0 /* DetailsView.swift in Sources */,
 				F0D134BD2AE1E74B00CB31D4 /* MixedImmerssiveApp.swift in Sources */,
 				F0D134E32AE8052000CB31D4 /* HomeView.swift in Sources */,
+				F02EBC932B15874B004F99F5 /* Listing.swift in Sources */,
 				F0B9E3932AEB140B00F062B0 /* SearchBarView.swift in Sources */,
-				F0A665052B0455FF00BF5ACE /* ARView.swift in Sources */,
+				F02EBC8E2B142D60004F99F5 /* CloudKitManager.swift in Sources */,
 				F0D134DD2AE7FE3000CB31D4 /* CardView.swift in Sources */,
 				F0D134C12AE1E74B00CB31D4 /* ImmersiveView.swift in Sources */,
 				F0A664EB2B0300F500BF5ACE /* AccountView.swift in Sources */,
+				F08DF45E2B0FD33200A8220F /* FloorPlanControls.swift in Sources */,
 				F0B9E3912AEB07B400F062B0 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MixedImmerssive/MixedImmerssive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MixedImmerssive/Preview Content\"";
@@ -452,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MixedImmerssive/MixedImmerssive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MixedImmerssive/Preview Content\"";

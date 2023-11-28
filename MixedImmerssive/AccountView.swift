@@ -11,7 +11,7 @@ struct AccountView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: ARView()) {
+                NavigationLink(destination: MapView()) {
                     Text("Add a new Property")
                     Image(systemName: "plus.app")
                 }

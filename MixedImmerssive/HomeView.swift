@@ -10,10 +10,14 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var isEditing = false
+//    @ObservedObject var viewModel = ListingsViewModel()
     
     var body: some View {
         VStack {
             SidebarView()
+//            List(viewModel.listings) { listing  in
+//                CardView(listing: listing)
+//            }
             ToolbarView(isEditing: $isEditing)
         }
     }

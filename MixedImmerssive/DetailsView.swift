@@ -17,13 +17,13 @@ struct DetailsView: View {
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     
-    var rentalProperty: RentalProperty
+    var listing: Listing
     
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                AsyncImage(url: URL(string: rentalProperty.imageUrl)) { image in
+                AsyncImage(url: URL(string: listing.imageUrl)) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -34,39 +34,39 @@ struct DetailsView: View {
                 .clipped()
                 
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(rentalProperty.price)
+                    Text(listing.price)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     
-                    Text(rentalProperty.address)
+                    Text(listing.address)
                         .font(.headline)
                     
                     HStack {
-                        Text("Bedrooms: \(rentalProperty.bedrooms)")
+                        Text("Bedrooms: \(listing.bedrooms)")
                         Spacer()
-                        Text("Bathrooms: \(rentalProperty.bathrooms)")
+                        Text("Bathrooms: \(listing.bathrooms)")
                     }
                     .font(.subheadline)
                     
                     HStack {
-                        Text("Space: \(rentalProperty.space)")
+                        Text("Space: \(listing.space)")
                         Spacer()
-                        Text("Move in: \(rentalProperty.moveInDate)")
+                        Text("Move in: \(listing.moveInDate)")
                     }
                     .font(.subheadline)
                     
-                    Text(rentalProperty.description)
+                    Text(listing.description)
                         .padding(.top, 8)
                     
-                    Text(rentalProperty.listingBy)
+                    Text(listing.listingBy)
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .padding(.top, 8)
                     
-                    Text(rentalProperty.openHours ?? "")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                        .padding(.top, 4)
+//                    Text(listing.openHours ?? "")
+//                        .font(.caption)
+//                        .foregroundColor(.secondary)
+//                        .padding(.top, 4)
                 }
                 .padding(.horizontal)
                 
@@ -86,6 +86,7 @@ struct DetailsView: View {
                 
                 Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
                     .toggleStyle(.button)
+                    .padding(.top, 50)
             }
             .padding()
             .onChange(of: showImmersiveSpace) { _, newValue in

@@ -6,78 +6,75 @@
 //
 
 import SwiftUI
+import CloudKit
 
 struct CardView: View {
-    
-    let property: RentalProperty
-    
+    let listing: Listing
+
     var body: some View {
-        
         VStack(alignment: .leading, spacing: 10) {
-            AsyncImage(url: URL(string: property.imageUrl)){ phase in
+            AsyncImage(url: URL(string: listing.imageUrl)) { phase in
                 switch phase {
                 case .empty:
-                    // Placeholder view or loading indicator
                     ProgressView()
                 case .success(let image):
-                    // The loaded image
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-//                        .scaledToFill()
                         .clipped()
                         .frame(height: 200)
                         .cornerRadius(10)
                 case .failure:
-                    // Error view
                     Text("Failed to load image")
                 @unknown default:
-                    // Handle other states
                     EmptyView()
                 }
             }
             
-            Text(property.openHours ?? "")
+            Text(listing.moveInDate, style: .date)
                 .font(.subheadline)
-//                .foregroundColor(.gray)
             
-            Text(property.price)
+            Text(listing.price)
                 .font(.title)
                 .fontWeight(.bold)
             
-            Text("\(property.bedrooms) beds | \(property.bathrooms) baths | \(property.space)")
-                .font(.subheadline)
-//                .foregroundColor(.gray)
-            
-            Text(property.address)
+            Text("\(listing.bedrooms) beds | \(listing.bathrooms) baths | \(listing.space)")
                 .font(.subheadline)
             
-            Text(property.listingBy)
+            Text(listing.address)
+                .font(.subheadline)
+            
+            Text(listing.listingBy)
                 .font(.footnote)
-//                .foregroundColor(.gray)
                 .padding(.top, 5)
         }
         .padding()
         .background(.ultraThinMaterial)
         .cornerRadius(10)
         .shadow(radius: 5)
-        
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView(property: RentalProperty(
-                    openHours: "Open: Sun. 12-1:30pm",
-                    price: "$4,500/mo",
-                    bedrooms: "2",
-                    bathrooms: "1",
-                    space: "1,704 sqft",
-                    address: "98 Havemeyer St, Brooklyn, NY 11211",
-                    moveInDate: "2023-12-01",
-                    description: "Spacious condo in a prime location, close to public transportation and amenities.",
-                    listingBy: "LISTING BY: NEST SEEKERS INTERNATIONAL",
-                    imageUrl: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
-                ))
-    }
-}
+
+
+//struct CardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CardView(listing: Listing)
+//    }
+//
+//    static func mockRecord() -> CKRecord {
+//        let record = CKRecord(recordType: "YourRecordType")
+//        record["openHours"] = "Open: Sun. 12-1:30pm"
+//        record["price"] = "$4,500/mo"
+//        record["bedrooms"] = "2"
+//        record["bathrooms"] = "1"
+//        record["space"] = "1,704 sqft"
+//        record["address"] = "98 Havemeyer St, Brooklyn, NY 11211"
+//        record["moveInDate"] = Date() // Use an actual date
+//        record["description"] = "Spacious condo in a prime location, close to public transportation and amenities."
+//        record["listingBy"] = "LISTING BY: NEST SEEKERS INTERNATIONAL"
+//        record["imageUrl"] = "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+//
+//        return record
+//    }
+//}
