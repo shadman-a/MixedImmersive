@@ -12,7 +12,6 @@
 		F088C5562B0DBC38004A62F3 /* FloorPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C5552B0DBC38004A62F3 /* FloorPlan.swift */; };
 		F08DF45E2B0FD33200A8220F /* FloorPlanControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08DF45D2B0FD33200A8220F /* FloorPlanControls.swift */; };
 		F0A664EB2B0300F500BF5ACE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A664EA2B0300F400BF5ACE /* AccountView.swift */; };
-		F0B9E3912AEB07B400F062B0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3902AEB07B400F062B0 /* DataService.swift */; };
 		F0B9E3932AEB140B00F062B0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */; };
 		F0B9E3952AEB318700F062B0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9E3942AEB318700F062B0 /* DetailsView.swift */; };
 		F0D134BB2AE1E74B00CB31D4 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F0D134BA2AE1E74B00CB31D4 /* RealityKitContent */; };
@@ -46,7 +45,6 @@
 		F088C5552B0DBC38004A62F3 /* FloorPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlan.swift; sourceTree = "<group>"; };
 		F08DF45D2B0FD33200A8220F /* FloorPlanControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanControls.swift; sourceTree = "<group>"; };
 		F0A664EA2B0300F400BF5ACE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		F0B9E3902AEB07B400F062B0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F0B9E3922AEB140B00F062B0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F0B9E3942AEB318700F062B0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		F0D134B52AE1E74B00CB31D4 /* MixedImmerssive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedImmerssive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +102,6 @@
 		F0A664EC2B03177300BF5ACE /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F0B9E3902AEB07B400F062B0 /* DataService.swift */,
 				F02EBC8D2B142D60004F99F5 /* CloudKitManager.swift */,
 			);
 			path = Services;
@@ -305,7 +302,6 @@
 				F0D134C12AE1E74B00CB31D4 /* ImmersiveView.swift in Sources */,
 				F0A664EB2B0300F500BF5ACE /* AccountView.swift in Sources */,
 				F08DF45E2B0FD33200A8220F /* FloorPlanControls.swift in Sources */,
-				F0B9E3912AEB07B400F062B0 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

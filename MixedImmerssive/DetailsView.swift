@@ -7,7 +7,7 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
+//import RealityKitContent
 
 struct DetailsView: View {
     
@@ -16,6 +16,7 @@ struct DetailsView: View {
     
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    
     
     var listing: Listing
     
@@ -63,10 +64,10 @@ struct DetailsView: View {
                         .foregroundColor(.secondary)
                         .padding(.top, 8)
                     
-//                    Text(listing.openHours ?? "")
-//                        .font(.caption)
-//                        .foregroundColor(.secondary)
-//                        .padding(.top, 4)
+                    Text(listing.usdzFileURL?.absoluteString ?? "N/A")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .padding(.top, 4)
                 }
                 .padding(.horizontal)
                 
@@ -81,7 +82,6 @@ struct DetailsView: View {
                 }
                 .padding(.horizontal)
                 .padding(.top, 20)
-                
                 
                 
                 Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
@@ -108,10 +108,13 @@ struct DetailsView: View {
                 }
             }
             
-        }
-        .navigationBarTitle("Details", displayMode: .inline)
+            
+            
+        } .navigationBarTitle("Details", displayMode: .inline)
+        
     }
 }
+
 
 
 //#Preview {
