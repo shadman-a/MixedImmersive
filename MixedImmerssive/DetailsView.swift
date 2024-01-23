@@ -12,7 +12,7 @@ import RealityKit
 struct DetailsView: View {
     
     @State private var showImmersiveSpace = false
-    @State private var immersiveSpaceIsShown = false
+    @State private var immersiveSpaceIsShown = true
     
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace

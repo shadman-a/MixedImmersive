@@ -51,7 +51,7 @@ struct CardView: View {
         .padding()
         .background(.ultraThinMaterial)
         .cornerRadius(10)
-        .shadow(radius: 5)
+        .shadow(radius: 0)
     }
 }
 
