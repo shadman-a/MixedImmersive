@@ -9,13 +9,19 @@ import SwiftUI
 
 @main
 struct MixedImmerssiveApp: App {
+    let sharedDataModel = SharedDataModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(sharedDataModel)
         }
 
-        ImmersiveSpace(id: "ImmersiveSpace") {
+        WindowGroup(id: "ImmersiveSpace") {
             ImmersiveView()
+                .environmentObject(sharedDataModel)
         }
+        .windowStyle(.volumetric)
+        .defaultSize(width: 1, height: 0.4, depth: 1, in: .meters)
     }
 }

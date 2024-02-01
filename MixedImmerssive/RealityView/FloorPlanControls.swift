@@ -10,7 +10,10 @@ import SwiftUI
 /// Controls that people can use to manipulate the globe in a volume.
 struct FloorPlanControls: View {
 //    @Environment(ViewModel.self) private var model
-    @State private var isTiltPickerVisible: Bool = true
+    @State private var isTiltPickerVisible: Bool = false
+      @Binding var resetRotation: Bool
+      @Binding var topDownView: Bool
+
 
     var body: some View {
 
@@ -22,12 +25,15 @@ struct FloorPlanControls: View {
                 .accessibilitySortPriority(1)
 
             HStack(spacing: 17) {
-                Toggle(isOn: $isTiltPickerVisible) {
-                    Label("Sun", systemImage: "sun.max")
+                Toggle(isOn: $resetRotation){
+                    Label("Reset Rotation", systemImage: "sun.max")
                 }
-
-                Toggle(isOn: $isTiltPickerVisible) {
-                    Label("Poles", systemImage: "mappin.and.ellipse")
+                   .onChange(of: resetRotation) { _ in
+                       resetRotation = false
+                       topDownView = false
+                   }
+                Toggle(isOn: $topDownView) {
+                    Label("Top-Down View", systemImage: "mappin.and.ellipse")
                 }
 
                 Toggle(isOn:$isTiltPickerVisible) {
@@ -144,7 +150,7 @@ enum GlobeTilt: String, CaseIterable, Identifiable {
     }
 }
 
-#Preview {
-    FloorPlanControls()
+//#Preview {
+//    FloorPlanControls()
 //        .environment(ViewModel())
-}
+//}

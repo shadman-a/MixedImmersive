@@ -7,21 +7,24 @@
 
 import SwiftUI
 import RealityKit
-//import RealityKitContent
 
 struct DetailsView: View {
-    
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = true
+    @State private var showModel = false
     
+    @EnvironmentObject var dataModel: SharedDataModel
+
+
+    @Environment(\.openWindow) var openWindow
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     
-    
     var listing: Listing
     
-    
+
     var body: some View {
+        
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 AsyncImage(url: URL(string: listing.imageUrl)) { image in
@@ -63,13 +66,13 @@ struct DetailsView: View {
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .padding(.top, 8)
+                        .onAppear{
+                            dataModel.sharedValue = listing.usdzFileURL!
+                        }
                     
-                    Text(listing.usdzFileURL?.absoluteString ?? "N/A")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                        .padding(.top, 4)
                 }
                 .padding(.horizontal)
+                             
                 
                 Button(action: {
                     // Action for lease button
@@ -82,41 +85,23 @@ struct DetailsView: View {
                 }
                 .padding(.horizontal)
                 .padding(.top, 20)
-                
-                
-                Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-                    .toggleStyle(.button)
-                    .padding(.top, 50)
             }
+            Button {
+                print(dataModel.sharedValue!)
+                openWindow(id: "ImmersiveSpace")
+            } label: {
+                Text("Show Immersive Space")
+                    .font(.title)
+            }
+            
             .padding()
-            .onChange(of: showImmersiveSpace) { _, newValue in
-                Task {
-                    if newValue {
-                        switch await openImmersiveSpace(id: "ImmersiveSpace") {
-                        case .opened:
-                            immersiveSpaceIsShown = true
-                        case .error, .userCancelled:
-                            fallthrough
-                        @unknown default:
-                            immersiveSpaceIsShown = false
-                            showImmersiveSpace = false
-                        }
-                    } else if immersiveSpaceIsShown {
-                        await dismissImmersiveSpace()
-                        immersiveSpaceIsShown = false
-                    }
-                }
-            }
-            
-            
-            
-        } .navigationBarTitle("Details", displayMode: .inline)
-        
+        }
+        .navigationBarTitle("Details", displayMode: .inline)
     }
 }
 
-
-
-//#Preview {
-//    DetailsView()
+//struct DetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailsView(listing: Listing.example) // Replace Listing.example with an actual Listing instance
+//    }
 //}

@@ -15,10 +15,15 @@ struct ImmersiveView: View {
     @State var axRotateClockwise: Bool = false
     @State var axRotateCounterClockwise: Bool = false
     
+    @State private var rotationAngle: Angle = .zero
+    @State private var resetRotation: Bool = false
+    @State private var topDownView: Bool = false
+
+    
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .controlPanelGuide, vertical: .bottom)) {
-            FloorPlan() 
-            FloorPlanControls()
+            Model3DView(rotationAngle: $rotationAngle, topDownView: $topDownView)
+            FloorPlanControls(resetRotation: $resetRotation, topDownView: $topDownView)
         }
     }
 }
