@@ -15,30 +15,27 @@ struct ToolbarView: View {
 
     var body: some View {
         HStack {
-            Button(action: {
-                print("Add tapped")
-            }) {
-                Image(systemName: "plus")
-                    .padding()
-            }
+//            Button(action: {
+//                print("Add tapped")
+//            }) {
+//                Image(systemName: "plus")
+//                    .padding()
+//            }
             
             Spacer() // creates space between items
-            SearchBarView(text: $searchText, placeholder: "Search")
-            Button(action: {
-                print("Save tapped")
-            }) {
-                Image(systemName: "square.and.arrow.down")
+            ShareLink(item: "Check this out! https://example.com") {
+                       Label("Share", systemImage: "square.and.arrow.up")
                     .padding()
-            }
+                   }
             
             Spacer().frame(width: 16) // creates a fixed-width space
 
-            Button(action: {
-                isEditing.toggle()
-            }) {
-                Image(systemName: isEditing ? "map" : "list.dash")
-                    .padding()
-            }
+//            Button(action: {
+//                isEditing.toggle()
+//            }) {
+//                Image(systemName: isEditing ? "map" : "list.dash")
+//                    .padding()
+//            }
         }
         .padding(.horizontal)
         .background(Color.gray.opacity(0.2))

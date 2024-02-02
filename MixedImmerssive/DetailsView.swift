@@ -72,8 +72,15 @@ struct DetailsView: View {
                     
                 }
                 .padding(.horizontal)
-                             
+                Button {
+                    print(dataModel.sharedValue!)
+                    openWindow(id: "ImmersiveSpace")
+                } label: {
+                    Text("Open 3D FloorPlan")
+                        .font(.title)
+                }
                 
+                .padding()
                 Button(action: {
                     // Action for lease button
                     print("Lease button tapped!")
@@ -86,15 +93,6 @@ struct DetailsView: View {
                 .padding(.horizontal)
                 .padding(.top, 20)
             }
-            Button {
-                print(dataModel.sharedValue!)
-                openWindow(id: "ImmersiveSpace")
-            } label: {
-                Text("Show Immersive Space")
-                    .font(.title)
-            }
-            
-            .padding()
         }
         .navigationBarTitle("Details", displayMode: .inline)
     }

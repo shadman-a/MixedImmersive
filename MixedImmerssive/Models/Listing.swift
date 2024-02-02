@@ -19,5 +19,7 @@ struct Listing: Identifiable {
     var moveInDate: Date
     var price: String
     var space: String
-    var usdzFileURL: URL? // URL to the local usdz file
+    var usdzFileURL: URL?
+    var longitude: Double
+    var latitude: Double
 }

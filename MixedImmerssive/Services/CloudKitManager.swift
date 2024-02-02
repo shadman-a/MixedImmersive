@@ -14,7 +14,7 @@ class CloudKitManager {
     private init() {}
 
     func fetchListings(completion: @escaping ([Listing]) -> Void) {
-        let container = CKContainer(identifier: "iCloud.com.example.apple-samplecode.RoomPlanExampleAppU2W5XN7UV6") // Change to your container ID
+        let container = CKContainer(identifier: "iCloud.com.example.apple-samplecode.RoomPlanExampleAppU2W5XN7UV6")
         let publicDatabase = container.publicCloudDatabase
         let query = CKQuery(recordType: "FloorPlans", predicate: NSPredicate(value: true))
 
@@ -36,7 +36,9 @@ class CloudKitManager {
                     listingBy: record["listingBy"] as? String ?? "",
                     moveInDate: record["moveInDate"] as? Date ?? Date(),
                     price: record["price"] as? String ?? "",
-                    space: record["space"] as? String ?? ""
+                    space: record["space"] as? String ?? "",
+                    longitude: record["longitude"] as? Double ?? 0.0, 
+                    latitude: record["latitude"] as? Double ?? 0.0
                 )
 
                 if let usdzAsset = record["file"] as? CKAsset, let fileURL = usdzAsset.fileURL {
